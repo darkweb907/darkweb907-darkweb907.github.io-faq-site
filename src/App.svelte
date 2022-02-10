@@ -56,6 +56,9 @@
 </main>
 
 <style>
+	h1{
+		color:hsl(238, 29%, 16%);
+	}
 	.image{
 		position: absolute;
 	}
@@ -98,6 +101,9 @@
 	}
 
 	@media (max-width: 640px) {
+		img{
+			width: 140%;
+		}
 		.image{
 			top: 63px;
     max-width: 100%;
@@ -108,12 +114,18 @@
 			max-width: none;
 		}
 		.grid{
+			background-position: center -14rem;
+    		background-size: 78%;
 			padding: 7rem 0;
 			justify-content: center;
 			grid-template-columns: repeat(1 , 1fr);
 		}
 	} 
 	@media (max-width: 450px) {
+		.grid{
+			background-position: center -9rem;
+    		background-size: 78%;
+		}
 		.image{
 			top: 72px;
 		}

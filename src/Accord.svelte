@@ -7,7 +7,7 @@
 <div class=  "faq">
         <div class="accord">
             <div class="accord-head">
-                <h3> {question}</h3>
+                <h3 class="head"> {question}</h3>
                 <span style="align-self: center;" on:click="{()=>{family= !family}}"><img class:rotate={family} src="{img}" alt="arrow" ></span> 
             </div>
             <div class="accord-text" class:family={family}>
@@ -16,6 +16,12 @@
         </div>
 </div>
 <style>
+    .head{
+        cursor: ponter;
+    }
+    p{
+	color:  hsl(238, 29%, 16%);
+}
     span{ 
         cursor: pointer;
     }
